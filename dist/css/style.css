@@ -1,0 +1,216 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px; }
+
+h1 {
+  color: #202046;
+  font-size: 32px;
+  font-weight: 300; }
+
+p {
+  font-weight: 700;
+  color: #202046; }
+  p span {
+    color: #babacf;
+    font-weight: 500;
+    margin-left: 10px; }
+
+.quote {
+  position: absolute;
+  margin-left: 104px; }
+
+.portrait {
+  height: 550px;
+  width: 550px;
+  background: url("/images/pattern-bg.svg") no-repeat center/contain; }
+  .portrait img {
+    height: 400px;
+    width: 400px;
+    margin: 77px;
+    box-shadow: 1px 1px 100px 0.5px #a3a3a3; }
+
+.attribution {
+  z-index: 1;
+  font-size: 15px; }
+
+.curve {
+  margin-bottom: -100px;
+  align-self: flex-start;
+  position: absolute;
+  bottom: 0; }
+
+.buddy-1 {
+  display: block; }
+
+.buddy-2 {
+  display: none; }
+
+.btn {
+  box-sizing: border-box;
+  height: 50px;
+  display: flex;
+  border-radius: 30px;
+  position: absolute;
+  justify-content: space-between;
+  background-color: whitesmoke; }
+  .btn img {
+    margin-top: 1px;
+    padding: 18px;
+    z-index: 10px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer; }
+
+@media (max-width: 1024px) {
+  .curve {
+    margin-bottom: -204px;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0; } }
+
+@media (max-width: 768px) {
+  .btn {
+    margin-top: -69px;
+    margin-left: -82px; }
+  h1 {
+    font-size: 32px;
+    font-weight: 300; }
+  p {
+    font-weight: 700; }
+    p span {
+      font-weight: 500;
+      margin-left: 10px; }
+  .curve {
+    align-self: flex-start;
+    margin-bottom: -745px;
+    position: absolute;
+    bottom: 0; }
+  .quote {
+    margin-left: 91px;
+    height: 32px;
+    width: 45px; }
+  .main {
+    flex-direction: column; }
+  .portrait {
+    order: 0;
+    width: 300px;
+    height: 300px; }
+    .portrait img {
+      width: 250px;
+      height: 250px;
+      margin: 28px; }
+  .typo {
+    margin-top: 50px;
+    order: 1; }
+  .curve {
+    align-self: flex-start;
+    margin-bottom: -260px;
+    position: absolute;
+    bottom: 0;
+    width: 300px; }
+  .attribution {
+    position: absolute;
+    bottom: -250px; } }
+
+@media (max-width: 425px) {
+  .btn {
+    margin-top: 42px;
+    margin-left: -103px; }
+  h1 {
+    font-size: 16px;
+    font-weight: 300; }
+  p {
+    font-weight: 700; }
+    p span {
+      font-weight: 500;
+      margin-left: 10px; }
+  .curve {
+    align-self: flex-start;
+    margin-bottom: -745px;
+    position: absolute;
+    bottom: 0; }
+  .quote {
+    margin-left: 91px;
+    height: 32px;
+    width: 45px; }
+  .main {
+    flex-direction: column; }
+  .portrait {
+    order: 0;
+    width: 300px;
+    height: 300px; }
+    .portrait img {
+      width: 250px;
+      height: 250px;
+      margin: 28px; }
+  .typo {
+    margin-top: 50px;
+    order: 1; }
+  .curve {
+    align-self: flex-start;
+    margin-bottom: -260px;
+    position: absolute;
+    bottom: 0;
+    width: 300px; }
+  .attribution {
+    position: absolute;
+    bottom: -250px;
+    width: 300px; } }
+
+@media (max-width: 375px) {
+  .btn {
+    margin-top: 19px;
+    margin-left: -103px; } }
+
+@media (max-width: 320px) {
+  .btn {
+    margin-top: 2px;
+    margin-left: -103px; }
+  h1 {
+    font-size: 16px;
+    font-weight: 300; }
+  p {
+    font-weight: 700; }
+    p span {
+      font-weight: 500;
+      margin-left: 10px; }
+  .curve {
+    align-self: flex-start;
+    margin-bottom: -251px;
+    position: absolute;
+    bottom: 0; }
+  .main {
+    flex-direction: column;
+    padding: 10px; }
+  .portrait {
+    order: 0;
+    width: 300px;
+    height: 300px; }
+    .portrait img {
+      width: 250px;
+      height: 250px;
+      margin: 28px; }
+  .quote {
+    margin-left: 91px;
+    height: 32px;
+    width: 45px; }
+  .typo {
+    margin-top: 50px;
+    order: 1;
+    padding: 10px; }
+  .attribution {
+    position: absolute;
+    bottom: -251px; }
+  .curve {
+    width: 300px; } }

@@ -1,0 +1,327 @@
+$primary-d: hsl(240, 38%, 20%);
+$primary-w: hsl(240, 18%, 77%);
+$font-size-b: 32px;
+$font-size-r: 16px;
+$font-family: 'Inter',
+sans-serif;
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: $font-family;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px;
+}
+
+h1 {
+    color: $primary-d;
+    font-size: $font-size-b;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 700;
+    color: $primary-d;
+
+    span {
+        color: $primary-w;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+}
+
+.quote {
+    position: absolute;
+    margin-left: 104px;
+
+}
+
+.portrait {
+    height: 550px;
+    width: 550px;
+    background: url("/images/pattern-bg.svg") no-repeat center /contain;
+
+    img {
+        height: 400px;
+        width: 400px;
+        margin: 77px;
+        box-shadow: 1px 1px 100px 0.5px rgb(163, 163, 163);
+    }
+}
+
+.attribution {
+    z-index: 1;
+    font-size: 15px;
+}
+
+.curve {
+    margin-bottom: -100px;
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0;
+}
+
+.buddy-1 {
+    display: block;
+}
+
+.buddy-2 {
+    display: none;
+}
+
+.btn {
+    // width: 100px;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    border-radius: 30px;
+    position: absolute;
+    justify-content: space-between;
+    background-color: whitesmoke;
+
+    img {
+        margin-top: 1px;
+        padding: 18px;
+        z-index: 10px;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    // .btn {
+    //     margin-top: 381px;
+    //     margin-left: 133px;
+    // }
+
+    .curve {
+        margin-bottom: -204px;
+        align-self: flex-start;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        margin-top: -69px;
+        margin-left: -82px;
+    }
+
+    h1 {
+        font-size: $font-size-b;
+        font-weight: 300;
+    }
+
+    p {
+        font-weight: 700;
+
+        span {
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    .curve {
+        align-self: flex-start;
+        margin-bottom: -745px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .quote {
+        margin-left: 91px;
+        height: 32px;
+        width: 45px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .portrait {
+        order: 0;
+        width: 300px;
+        height: 300px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 28px
+        }
+    }
+
+    .typo {
+        margin-top: 50px;
+        order: 1;
+    }
+
+    .curve {
+        align-self: flex-start;
+        margin-bottom: -260px;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: -250px;
+    }
+}
+
+
+
+@media (max-width: 425px) {
+
+    .btn {
+        margin-top: 42px;
+        margin-left: -103px;
+    }
+
+    h1 {
+        font-size: $font-size-r;
+        font-weight: 300;
+    }
+
+    p {
+        font-weight: 700;
+
+        span {
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    .curve {
+        align-self: flex-start;
+        margin-bottom: -745px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .quote {
+        margin-left: 91px;
+        height: 32px;
+        width: 45px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .portrait {
+        order: 0;
+        width: 300px;
+        height: 300px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 28px
+        }
+    }
+
+    .typo {
+        margin-top: 50px;
+        order: 1;
+    }
+
+    .curve {
+        align-self: flex-start;
+        margin-bottom: -260px;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: -250px;
+        width: 300px;
+    }
+}
+@media (max-width: 375px){
+    .btn {
+        margin-top: 19px;
+        margin-left: -103px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .btn {
+        margin-top: 2px;
+        margin-left: -103px;
+    }
+
+    h1 {
+        font-size: $font-size-r;
+        font-weight: 300;
+    }
+
+    p {
+        font-weight: 700;
+
+        span {
+            font-weight: 500;
+            margin-left: 10px;
+        }
+    }
+
+    .curve {
+        align-self: flex-start;
+        margin-bottom: -251px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .portrait {
+        order: 0;
+        width: 300px;
+        height: 300px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 28px
+        }
+    }
+
+    .quote {
+        margin-left: 91px;
+        height: 32px;
+        width: 45px;
+    }
+
+    .typo {
+        margin-top: 50px;
+        order: 1;
+        padding: 10px;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: -251px;
+    }
+
+    .curve {
+        width: 300px;
+    }
+}
