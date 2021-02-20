@@ -30,24 +30,22 @@
       I couldn’t recommend this course enough. I’m now in the job of my dreams and so
       excited about the future. ”</h1>
     <p class="buddy-1">Tanya Sinclair<span>UX Engineer</span> </p>
-    <h1 class="buddy-2" >“ If you want to lay the best foundation possible I’d recommend taking this course.
+    <h1 class="buddy-2 off">“ If you want to lay the best foundation possible I’d recommend taking this course.
       The depth the instructors go into is incredible. I now feel so confident about
       starting up as a professional developer. ”</h1>
-    <p class="buddy-2">John Tarkpor<span>Junior Front-end Developer</span></p>
+    <p class="buddy-2 off">John Tarkpor<span>Junior Front-end Developer</span></p>
   </div>
   <div class="portrait">
     <img class="buddy-1" src="images/image-tanya.jpg"  alt="Tanya Sinclair">
-    <img class="buddy-2" src="images/image-john.jpg" alt="">
-    <!-- <div class="btn">
-      <div>
-      <img src="./images/icon-prev.svg" alt="prev">
-      <img src="./images/icon-next.svg" alt="next">
-    </div> -->
+    <img class="buddy-2 off" src="images/image-john.jpg" alt="">
+    </div>
+    <div class="btn">
+      <div class="inBtn">
+      <img src="./images/icon-prev.svg" alt="prev" id="prev">
+      <img src="./images/icon-next.svg" alt="next" id="next">
     </div>
   </div>
 </div>
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -55,17 +53,25 @@
   </div>
   <img class="curve" src="/images/pattern-curve.svg" alt="">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
 
+$(document).ready(function()
+{
+  $('#next').on('click', function()
+  {
+    $('.buddy-1').addClass("off");
+    $('.buddy-2').toggleClass("off");
+    });
+    $(document).on('click', '#prev, .off', function()
+    {
+      $('.buddy-1').toggleClass("off");
+      $('.buddy-2').addClass("off")
+    });
+});
+</script>
 
-  <script>
-
-
-  </script>
 </body>
-<!-- <div class="btn">
-  <img src="./images/icon-prev.svg" alt="prev">
-  <img src="./images/icon-next.svg" alt="next">
-</div> -->
 </html>
 
 <!-- Made with ❤ by Sabbir Sobhani on 20-Feb-2021 at #homeRNGKP -->

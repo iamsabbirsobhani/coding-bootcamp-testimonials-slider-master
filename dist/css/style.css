@@ -50,12 +50,6 @@ p {
   position: absolute;
   bottom: 0; }
 
-.buddy-1 {
-  display: block; }
-
-.buddy-2 {
-  display: none; }
-
 .btn {
   box-sizing: border-box;
   height: 50px;
@@ -63,16 +57,26 @@ p {
   border-radius: 30px;
   position: absolute;
   justify-content: space-between;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  border: none;
+  margin-top: 403px;
+  margin-left: 550px; }
   .btn img {
     margin-top: 1px;
+    margin: 0px;
     padding: 18px;
     z-index: 10px;
     width: 12px;
     height: 12px;
     cursor: pointer; }
 
+.off {
+  display: none; }
+
 @media (max-width: 1024px) {
+  .btn {
+    margin-top: 403px;
+    margin-left: 106px; }
   .curve {
     margin-bottom: -204px;
     align-self: flex-start;
@@ -81,8 +85,8 @@ p {
 
 @media (max-width: 768px) {
   .btn {
-    margin-top: -69px;
-    margin-left: -82px; }
+    margin-top: -66px;
+    margin-left: -98px; }
   h1 {
     font-size: 32px;
     font-weight: 300; }
@@ -125,8 +129,8 @@ p {
 
 @media (max-width: 425px) {
   .btn {
-    margin-top: 42px;
-    margin-left: -103px; }
+    margin-top: 40px;
+    margin-left: -98px; }
   h1 {
     font-size: 16px;
     font-weight: 300; }
@@ -170,13 +174,13 @@ p {
 
 @media (max-width: 375px) {
   .btn {
-    margin-top: 19px;
-    margin-left: -103px; } }
+    margin-top: 25px;
+    margin-left: -98px; } }
 
 @media (max-width: 320px) {
   .btn {
-    margin-top: 2px;
-    margin-left: -103px; }
+    margin-top: 0px;
+    margin-left: -98px; }
   h1 {
     font-size: 16px;
     font-weight: 300; }
